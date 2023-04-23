@@ -2,7 +2,8 @@ let player = {
     name: "Per",
     chips: 200
 }
-
+player.name = prompt("Name: ")
+player.chips = Number(prompt("Chips: "))
 let cards = []
 let sum = 0
 let hasBlackJack = false

@@ -5,7 +5,10 @@ const ulEl = document.getElementById("ul-el")
 
 // Get the leads from the localStorage
 // Store it in a variable, leadsFromLocalStorage
+// localStorage.clear()
+let leadsFromLocalStorage = JSON.parse(localStorage.getItem("myLeads"))
 // Log out the variable
+console.log(leadsFromLocalStorage)
 
 inputBtn.addEventListener("click", function() {
     myLeads.push(inputEl.value)
